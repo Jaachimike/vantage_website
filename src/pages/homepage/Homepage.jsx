@@ -9,63 +9,14 @@ const Homepage = () => {
         <Slider />
       </div>
 
-      <div class="flex justify-center" className="shows">
-        <div class="w-1/2 px-4">
-          <div>
-            <h2>
-              Kupids Corner <span>See more</span>
-            </h2>
-            <Carousel
-              images={[
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-              ]}
-            />
-          </div>
-
-          <div>
-            <h2>
-              Kupids Corner <span>See more</span>
-            </h2>
-            <Carousel
-              images={[
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-                "https://swiperjs.com/demos/images/nature-1.jpg",
-              ]}
-            />
-          </div>
-
-          <div>
-            <h2>
-              Kupids Corner <span>See more</span>
+      <div className="flex justify-center  h-screen bg-gray-100">
+        <div className="w-full max-w-screen-md p-4">
+          <div className="bg-white p-4 rounded-lg">
+            <h2 className="text-2xl font-semibold mb-2">
+              Kupids Corner{" "}
+              <span className="text-sm">
+                <a href="http://">See more</a>
+              </span>
             </h2>
             <Carousel
               images={[
@@ -95,3 +46,57 @@ const Homepage = () => {
 };
 
 export default Homepage;
+
+{
+  /* <div>
+            <h2>
+              Kupids Corner <span>See more</span>
+            </h2>
+            <Carousel
+              images={[
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+              ]}
+            />
+          </div>
+
+          <div>
+            <h2>
+              Kupids Corner <span>See more</span>
+            </h2>
+            <Carousel
+              images={[
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+                "https://swiperjs.com/demos/images/nature-1.jpg",
+              ]}
+            />
+          </div> */
+}

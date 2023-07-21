@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 
 // import "./styles.css";
-import classes from "./index.module.css";
+// import classes from "./index.module.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,7 +25,7 @@ const defaultProps = {
 
 const Carousel = ({ images }) => {
   return (
-    <div class="w-full">
+    <div>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}

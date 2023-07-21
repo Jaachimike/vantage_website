@@ -12,7 +12,7 @@ const giauPass = "https://i.imgur.com/8IuucQZ.jpg";
 const Slider = () => {
   return (
     <HeroSlider
-      height={"100vh"}
+      height={"90vh"}
       autoplay
       controller={{
         initialSlide: 1,
