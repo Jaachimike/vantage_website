@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 
 // import "./styles.css";
 // import classes from "./index.module.css";
@@ -10,18 +10,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 // import required modules
 import { Pagination } from "swiper/modules";
 
-const propTypes = {
-  images: PropTypes.array,
-};
+// const propTypes = {
+//   images: PropTypes.array,
+// };
 
-const defaultProps = {
-  images: [],
-};
+// const defaultProps = {
+//   images: [],
+// };
 
 const Carousel = ({ images }) => {
   return (
@@ -37,7 +37,7 @@ const Carousel = ({ images }) => {
       >
         {images.map((imageUrl, index) => (
           <SwiperSlide key={index}>
-            <img src={imageUrl} alt={`Image ${index}`} />
+            <img src={imageUrl} alt={`Img ${index}`} />
           </SwiperSlide>
         ))}
 
