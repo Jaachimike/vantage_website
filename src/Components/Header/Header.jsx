@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Assuming you are using React Router for navigation
+import Logo from "../../Images/logo.png";
 
 const Header = () => {
   return (
     <header className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto flex items-center justify-between w-[60%]">
         {/* Logo */}
+
         <div>
           <Link to="/">
-            <img src="/path/to/logo.png" alt="Logo" className="w-12 h-12" />
+            <img src={Logo} alt="Logo" className="w-12 h-12" />
           </Link>
         </div>
 
