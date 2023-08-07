@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Homepage from './pages/homepage/Homepage';
 import Contact from './pages/contact/Contact';
 import Movies from './pages/movies/Movies';
+import Description from './pages/description/Description';
 
 function App() {
   return (<>
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/movies' element={<Movies />} />
+        <Route path='/description' element={<Description />} />
       </Routes>
       <Footer />
 
