@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "../../Components/Slider/Slider";
 import Carousel from "../../Components/Carousel/Carousel";
+import logo from "../../Images/poster.jpg";
 
 const Homepage = () => {
   return (
@@ -9,13 +10,13 @@ const Homepage = () => {
         <Slider />
       </div>
 
-      <div className="flex justify-center  h-screen bg-gray-100">
-        <div className="w-full max-w-screen-md p-4 ">
+      <div className="flex justify-center   bg-gray-100">
+        <div className="w-full max-w-screen-2xl p-4 ">
           <div className=" p-4 rounded-lg mb-10">
             <Carousel
               title={"Kupids Korner"}
               images={[
-                "https://swiperjs.com/demos/images/nature-1.jpg",
+                logo,
                 "https://swiperjs.com/demos/images/nature-1.jpg",
                 "https://swiperjs.com/demos/images/nature-1.jpg",
                 "https://swiperjs.com/demos/images/nature-1.jpg",

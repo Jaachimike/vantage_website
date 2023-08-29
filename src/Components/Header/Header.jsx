@@ -10,7 +10,7 @@ const Header = () => {
 
         <div>
           <Link to="/">
-            <img src={Logo} alt="Logo" className="w-12 h-12" />
+            <img src={Logo} alt="Logo" className="w-auto h-12" />
           </Link>
         </div>
 

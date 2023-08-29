@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import poster from "../../Images/logo.png";
 import Carousel from "../../Components/Carousel/Carousel";
+import ReactModal from "react-modal";
+import ReactPlayer from "react-player/lazy";
 
 const Description = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const openYouTubeChannel = () => {
+    window.open("https://www.youtube.com/your-channel-url", "_blank");
+  };
+
   return (
-    <div className="container mx-auto px-10 my-11">
-      <div className="flex flex-col mb-20 lg:flex-row items-center lg:justify-center ">
+    <div className="container mx-auto px-10 my-11 h-screen">
+      <div className="flex flex-col mb-20 lg:flex-row items-center lg:justify-center">
         {/* Picture */}
-        <div className="lg:w-1/2 mb-4 lg:mb-0">
+        <div
+          className="lg:w-1/2 mb-4 lg:mb-0 cursor-pointer"
+          onClick={openModal}
+        >
           <img
             src={poster}
             alt="Movie Poster"
@@ -31,11 +50,36 @@ const Description = () => {
             tristique, metus justo fermentum felis, ac dictum arcu ex eget
             magna.
           </p>
+          <button
+            className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            onClick={openYouTubeChannel}
+          >
+            Visit YouTube Channel
+          </button>
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <div className=" w-full max-w-screen-md p-4 ">
+      <div className=" w-1/2 md:w-full">
+        {/* Modal */}
+        <ReactModal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          style={{
+            content: {
+              width: "50%", // Adjust the width as needed
+              height: "50%", // Adjust the height as needed
+              margin: "auto", // Center the modal
+            },
+          }}
+        >
+          <button onClick={closeModal}>Close Modal</button>
+          <ReactPlayer url="https://www.youtube.com/watch?v=your-video-id" />
+        </ReactModal>
+      </div>
+
+      {/* Carousel */}
+      {/* <div className="flex justify-center">
+        <div className="w-full max-w-screen-2xl p-4">
           <Carousel
             title={"Kupids Korner"}
             images={[
@@ -58,7 +102,7 @@ const Description = () => {
             ]}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
